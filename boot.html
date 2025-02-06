@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .dropdown-menu>li>a:hover {
+            background: #4d4d4d24;
+        }
+
+        .container-fluid img {
+            width: 4rem;
+            background: none;
+            border: none;
+        }
+
+        .nav-item a {
+            padding-right: 2rem !important;
+        }
+
+        .d-flex>a {
+            margin-right: 5rem;
+        }
+
+        .carousel-item>img {
+            width: 30rem;
+        }
+
+
+        ::selection {
+            background-color: #90cdf4;
+            color: #fefefe;
+        }
+
+        @media only screen and (max-width: 736px) {
+
+            .toolkit {
+                font-size: 2.9rem !important;
+            }
+
+            .other-btn-e {
+                display: flex !important;
+                justify-content: center !important;
+            }
+        }
+    </style>
+</head>
+
+<body style="background-color: #0f0f0f; color: #f2f2f7;">
+
+    <nav class="navbar border-bottom border-text-white-10 border-opacity-1 border-0.01 p-2 navbar-expand-lg text-body-tertiary"
+        style="background-color: #0f0f0f;">
+        <div class="container-fluid justify-content-between">
+            <div class="d-flex align-items-center">
+                <img src="downloa.png" class="img-thumbnail" alt="ModrenWeb logo">
+                <a class="navbar-brand text-white fw-bold fs-4" href="/">ModrenWeb</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="text-light fs-1"><i class='bx bx-menu-alt-right'></i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 36rem;">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="#">Web Design</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white-50" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Technology
+                        </a>
+                        <ul class="dropdown-menu bg-dark">
+                            <li><a class="dropdown-item text-white" href="#">HTML 5</a></li>
+                            <li><a class="dropdown-item text-white" href="#">CSS 3</a></li>
+                            <li>
+                            </li>
+                            <li><a class="dropdown-item text-white" href="#">JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white-50" href="/contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button type="button" class="btn btn-outline-primary" style="color: #f2f2f7cd;" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+      <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-dark" id="loginModalLabel">Login in to ModrenWeb</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label text-dark">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text text-dark">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label text-dark">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label text-dark">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label text-dark" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary ">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+    <section class="pt-4 pt-md-11 mt-5">
+        <div class="container">
+            <div class="row  align-items-center">
+
+                <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+
+                    <!-- Heading -->
+                    <h1 class="display-3 text-center toolkit text-md-start fw-bolder"
+                        style="color: #f2f2f7 !important; font-size: 3.5rem;">
+                        The complete <br> toolkit for <span class="text-primary" style="color: #4490ff !important;">Web3
+                            <br> Authentication</span>
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="lead text-center mt-4 text-md-start text-body-secondary mb-6 mb-lg-8 fw-medium"
+                        style="color: #ababaf !important;">
+                        Easy auth for the most popular web3 wallets and web2 <br> login flows — so you can verify your
+                        users’ identities & <br> prove wallet ownership to off-chain systems.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="text-center other-btn-e text-md-start d-flex mt-5" style="gap: 2rem;">
+                        <button type="button" class="btn btn-secondary btn-lg fs-8"
+                            style="background: #f2f2f7 !important; color: #0f0f0f; font-weight: 600;">Get
+                            Started</button>
+                        </a>
+                        <button type="button" class="btn btn-outline-secondary btn-lg">Book Demo</button>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+                    <!-- Image -->
+                    <img src="/desktop-hero-auth.webp"
+                        class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..."
+                        data-aos="fade-up" data-aos-delay="100">
+
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+
+
+
+    <section class="py-8 py-md-11" style="margin-top: 6rem;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up">
+
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-3 border p-3 rounded-3"
+                        style="width: max-content; border-color: #c0c0c036 !important;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path d="M7 3h10a4 4 0 110 8H7a4 4 0 110-8zm0 6a2 2 0 100-4 2 2 0 000 4z"
+                                    fill="#335EEA"></path>
+                                <path d="M7 13h10a4 4 0 110 8H7a4 4 0 110-8zm10 6a2 2 0 100-4 2 2 0 000 4z"
+                                    fill="#335EEA" opacity=".3"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Heading -->
+                    <h3 class="mt-4 fw-bold">
+                        Built for developers
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-body-secondary mb-6 mb-md-0 mt-4" style="color: #ababaf !important">
+                        Landkit is built to make your life easier. Variables, build tooling, documentation, and reusable
+                        components.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="50">
+
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-3 border p-3 rounded-3"
+                        style="width: max-content; border-color: #c0c0c036 !important;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M5.5 4h4A1.5 1.5 0 0111 5.5v1A1.5 1.5 0 019.5 8h-4A1.5 1.5 0 014 6.5v-1A1.5 1.5 0 015.5 4zm9 12h4a1.5 1.5 0 011.5 1.5v1a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-1a1.5 1.5 0 011.5-1.5z"
+                                    fill="#335EEA"></path>
+                                <path
+                                    d="M5.5 10h4a1.5 1.5 0 011.5 1.5v7A1.5 1.5 0 019.5 20h-4A1.5 1.5 0 014 18.5v-7A1.5 1.5 0 015.5 10zm9-6h4A1.5 1.5 0 0120 5.5v7a1.5 1.5 0 01-1.5 1.5h-4a1.5 1.5 0 01-1.5-1.5v-7A1.5 1.5 0 0114.5 4z"
+                                    fill="#335EEA" opacity=".3"></path>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Heading -->
+                    <h3 class="mt-4 fw-bold">
+                        Designed to be modern
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-body-secondary mb-6 mb-md-0 mt-4" style="color: #ababaf !important">
+                        Designed with the latest design trends in mind. Landkit feels modern, minimal, and beautiful.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+
+                    <!-- Icon -->
+                    <div class="icon text-primary mb-3 border p-3 rounded-3"
+                        style="width: max-content; border-color: #c0c0c036 !important;">
+                        <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"></path>
+                                <path
+                                    d="M17.272 8.685a1 1 0 111.456-1.37l4 4.25a1 1 0 010 1.37l-4 4.25a1 1 0 01-1.456-1.37l3.355-3.565-3.355-3.565zm-10.544 0L3.373 12.25l3.355 3.565a1 1 0 01-1.456 1.37l-4-4.25a1 1 0 010-1.37l4-4.25a1 1 0 011.456 1.37z"
+                                    fill="#335EEA"></path>
+                                <rect fill="#335EEA" opacity=".3" transform="rotate(15 12 12)" x="11" y="4" width="2"
+                                    height="16" rx="1"></rect>
+                            </g>
+                        </svg>
+                    </div>
+
+                    <!-- Heading -->
+                    <h3 class="mt-4 fw-bold">
+                        Documentation for everything
+                    </h3>
+
+                    <!-- Text -->
+                    <p class="text-body-secondary mt-4 mb-0" style="color: #ababaf !important">
+                        We've written extensive documentation for components and tools, so you never have to reverse
+                        engineer anything.
+                    </p>
+
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+
+
+    <section class="py-5 text-center container" style="margin-top: 4rem;">
+        <div class="row py-lg-5">
+            <div class="col-lg-6 col-md-8 mx-auto">
+                <h1 class="fw-bolder toolkit" style="font-size: 3.5rem;">What You Can Build</h1>
+            </div>
+        </div>
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+            <div class="feature col border p-3 rounded-3" style="border-color: #c0c0c036 !important;">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center  border p-3 rounded-3 bg-gradient fs-2 mb-3">
+                    <img src="icon-efficient.svg" alt="">
+                </div>
+                <h3 class="fs-3 text-body-emphasis mt-4 fw-bold" style="color: #f2f2f7 !important;">Passwordless auth
+                </h3>
+                <p style="color: #ababaf !important;">Enable users to seamlessly log into any app with just a web3
+                    wallet or web2 login</p>
+            </div>
+            <div class="feature col  p-3  border rounded-3" style="border-color: #c0c0c036 !important;">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center  border p-3 rounded-3  bg-gradient fs-2 mb-3">
+                    <img src="icon-verified.svg" alt="">
+                </div>
+                <h3 class="fs-3 mt-4 fw-bold text-body-emphasis" style="color: #f2f2f7 !important;">Identity
+                    verification systems</h3>
+                <p style="color: #ababaf !important;">Securely verify a user's onchain identity & grant them access to
+                    gated resources, interaction with your app, and the ability to receive payments with ETH or ERC-20
+                    tokens.</p>
+            </div>
+            <div class="feature col  p-3  border rounded-3" style="border-color: #c0c0c036 !important;">
+                <div
+                    class="feature-icon d-inline-flex align-items-center justify-content-center  border p-3 rounded-3  bg-gradient fs-2 mb-3">
+                    <img src="icon-verified (1).svg" alt="">
+                </div>
+                <h3 class="fs-3 mt-4 fw-bold text-body-emphasis" style="color: #f2f2f7 !important;">Onchain & offchain
+                    data</h3>
+                <p style="color: #ababaf !important;">Understand your users better by merging their web2 and web3
+                    identities — with rich on-chain data.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section class="pt-4 pt-md-11 mt-0">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+
+                    <!-- Heading -->
+                    <h1 class="display-3 text-center toolkit text-md-start fw-bolder"
+                        style="color: #f2f2f7 !important; font-size: 3.5rem;">
+                        Seamless web3 Onboarding
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="lead text-center mt-4 text-md-start text-body-secondary mb-6 mb-lg-8 fw-medium"
+                        style="color: #ababaf !important;">
+                        Web3 onboarding for all: Authenticate <br> securely with 350+ web3 wallets, email and <br>
+                        social accounts
+                        on web, mobile, Unity and <br> Unreal Engine.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="text-center text-md-start  mt-4">
+                        <button type="button" class="btn btn-secondary btn-lg fs-8"
+                            style="background: #f2f2f7 !important; color: #0f0f0f; font-weight: 600;">Learn
+                            More</button>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+                    <!-- Image -->
+                    <img src="/uRdUTI83IHydlmMfu8DxQvIMs.avif"
+                        class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..."
+                        data-aos="fade-up" data-aos-delay="100">
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+    <section class="pt-4 pt-md-11 mt-0">
+        <div class="container">
+            <div class="row flex-row-reverse align-items-center">
+
+                <div class="col-12 col-md-7 col-lg-6 order-md-1 aos-init aos-animate" data-aos="fade-up">
+
+                    <!-- Heading -->
+                    <h1 class="display-3 text-center toolkit text-md-start fw-bolder"
+                        style="color: #f2f2f7 !important; font-size: 3.5rem;">
+                        Just one digital <br> identity
+                    </h1>
+
+                    <!-- Text -->
+                    <p class="lead text-center mt-4 text-md-start text-body-secondary mb-6 mb-lg-8 fw-medium"
+                        style="color: #ababaf !important;">
+                        Link your users’ web3 and web2 identities and <br> let them onboard with ownership thanks to our
+                        <br> Nitro Enclaves.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="text-center text-md-start  mt-4">
+                        <button type="button" class="btn btn-secondary btn-lg fs-8"
+                            style="background: #f2f2f7 !important; color: #0f0f0f; font-weight: 600;">Learn
+                            More</button>
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-6 order-md-2">
+
+                    <!-- Image -->
+                    <img src="/xf205QgtszH4MLLgHUC5QfyzPIQ.avif"
+                        class="img-fluid mw-md-150 mw-lg-130 mb-6 mb-md-0 aos-init aos-animate" alt="..."
+                        data-aos="fade-up" data-aos-delay="100">
+                </div>
+            </div> <!-- / .row -->
+        </div> <!-- / .container -->
+    </section>
+
+
+
+
+
+
+    <footer class="footer position-relative bg-dark mt-5 pt-5 pb-4 pb-lg-5" style="background: #1e1e1e3b !important;">
+        <span
+            class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
+        <div class="position-relative container pt-lg-4" data-bs-theme="dark">
+            <div class="row pb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="navbar-brand  text-white fw-bold fs-4 p-0 me-0 mb-3 mb-lg-4">
+                        <img style="mix-blend-mode: lighten;" src="downloa.png" width="47" alt="logo">
+                        ModrenWeb
+                    </div>
+                    <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Dive deeper into the world of Auth and unlock
+                        powerful features that can enhance your application’s security and user experience.
+                    </p>
+                    <form class="needs-validation" novalidate="">
+                        <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
+                        <div class="input-group">
+                            <input type="email" id="subscr-email" class="form-control rounded-start ps-5"
+                                placeholder="Your email" required="">
+                            <i
+                                class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                            <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email
+                                address.</div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+                    <div id="footer-links" class="row">
+                        <div class="col-lg-4">
+                            <h6 class="mb-2">
+                                <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                                    data-bs-toggle="collapse">Useful Links</a>
+                            </h6>
+                            <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                                <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block text-white fw-medium px-0 pt-1 pb-2">Home</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Services</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Our
+                                            Clients</a></li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Testimonials</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">News</a>
+                                    </li>
+                                </ul>
+                                <ul class="nav flex-column mb-2 mb-lg-0">
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Terms
+                                            &amp; Conditions</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Privacy
+                                            Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-3">
+                            <h6 class="mb-2">
+                                <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                                    data-bs-toggle="collapse">Socials</a>
+                            </h6>
+                            <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                                <ul class="nav flex-column mb-2 mb-lg-0">
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Facebook</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">LinkedIn</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Twitter</a>
+                                    </li>
+                                    <li class="nav-item"><a href="#"
+                                            class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Instagram</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                            <h6 class="mb-2 text-white" style="color: #fefefe !important;">Contact Us</h6>
+                            <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+                <span class="text-light opacity-50">© All rights reserved. Made by </span>
+                <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank"
+                    rel="noopener">Createx Studio</a>
+            </p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

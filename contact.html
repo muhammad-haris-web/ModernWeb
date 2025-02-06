@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<style>
+    .dropdown-menu>li>a:hover {
+        background: #4d4d4d24;
+    }
+
+    .container-fluid img {
+        width: 4rem;
+        background: none;
+        border: none;
+    }
+
+    .nav-item a {
+        padding-right: 2rem !important;
+    }
+
+    .d-flex>a {
+        margin-right: 5rem;
+    }
+
+    .carousel-item>img {
+        width: 30rem;
+    }
+
+
+    ::selection {
+        background-color: #90cdf4;
+        color: #fefefe;
+    }
+</style>
+</head>
+<body style="background: #0f0f0f !important;">
+
+    <nav class="navbar border-bottom border-text-white-10 border-opacity-1 border-0.01 p-2 navbar-expand-lg text-body-tertiary"
+    style="background-color: #0f0f0f;">
+    <div class="container-fluid justify-content-between">
+        <div class="d-flex align-items-center">
+            <img src="/downloa.png" class="img-thumbnail" alt="ModrenWeb logo">
+            <a class="navbar-brand text-white fw-bold fs-4" href="/">ModrenWeb</a>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="text-light fs-1"><i class='bx bx-menu-alt-right'></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="width: 36rem;">
+                <li class="nav-item">
+                    <a class="nav-link text-white-50" aria-current="page" href="/boot.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white-50" href="#">Web Design</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white-50" href="#" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Technology
+                    </a>
+                    <ul class="dropdown-menu bg-dark">
+                        <li><a class="dropdown-item text-white" href="#">HTML 5</a></li>
+                        <li><a class="dropdown-item text-white" href="#">CSS 3</a></li>
+                        <li>
+                        </li>
+                        <li><a class="dropdown-item text-white" href="#">JavaScript</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="/contact.html">Contact Us</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button type="button" class="btn btn-outline-primary" style="color: #f2f2f7cd;" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="loginModalLabel">Login in to ModrenWeb</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="row mt-n5 mt-sm-n7 mt-md-n8">
+    <div class="col-11 col-lg-9 mx-auto">
+        <div class="card shadow p-4 p-sm-5 p-md-6"  style="background-color: #181818 !important;">
+            <!-- Card header -->
+            <div class="card-header border-bottom px-0 pt-0 pb-5">
+                <!-- Title -->
+                <h1 class="mb-3 h3" style="color: #f2f2f7 !important;">Let's level up your brand, together</h1>
+                <p class="mb-0" style="color: #f2f2f7 !important;">You can reach us anytime via <a href="#">example@gmail.com</a></p>
+            </div>
+
+            <!-- Card body & form -->
+            <form class="card-body px-0 pb-0 pt-5 needs-validation" novalidate="">
+                <!-- Name -->
+                <div class="input-floating-label form-floating mb-4">
+                    <input type="text" class="form-control bg-transparent" id="floatingName" placeholder="Password" required="">
+                    <label for="floatingName" style="color: #fefefe89;">Your name</label>
+                </div>
+                <!-- Email -->
+                <div class="input-floating-label form-floating mb-4">
+                    <input type="email" class="form-control bg-transparent" id="floatingInput" placeholder="name@example.com" required="">
+                    <label for="floatingInput" style="color: #fefefe89">Email address</label>
+                </div>
+                <!-- Number -->
+                <div class="input-floating-label form-floating mb-4">
+                    <input type="text" class="form-control bg-transparent" id="floatingNumber" placeholder="Password" required="">
+                    <label for="floatingNumber" style="color: #fefefe89">Phone number</label>
+                </div>
+                <!-- Message -->
+                <div class="input-floating-label form-floating mb-4">
+                    <textarea class="form-control bg-transparent" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" required=""></textarea>
+                    <label for="floatingTextarea2" style="color: #fefefe89">Message</label>
+                </div>
+                <!-- Button -->
+                <button class="btn btn-lg btn-primary mb-0" style="color: #fefefe89">Send a message</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container mt-4">
+    <div class="row row-cols-1 mt-4 row-cols-lg-3 g-4">
+        <!-- Address info -->
+        <div class="col" >
+            <div class="card card-body border p-sm-5 " style="background-color: #181818 !important;">
+                <!-- Icon -->
+                <div class="mb-4"><i class="bi bi-geo-alt fa-xl text-primary"></i></div>
+                <!-- Title -->
+                <h6 class="mb-4 fw-bold fs-4" style="color: #f2f2f7 !important;">Office Address</h6>
+                <!-- Office item -->
+                <div class="d-flex align-items-center mb-2">
+                    <!-- Avatar -->
+                    <span class="heading-color fw-semibold mb-0" style="color: #fefefe89;">US office:</span>
+                </div>
+                <address class="mb-0"  style="color: #fefefe89;">1421 Coburn Hollow Road Metamora, Near Center Point, IL 61548.</address>
+            </div>
+        </div>
+
+        <!-- Email info -->
+        <div class="col">
+            <div class="card card-body border p-sm-5" style="background-color: #181818 !important;">
+                <!-- Icon -->
+                <div class="mb-4"><i class="bi bi-envelope fa-xl text-primary"></i></div>
+                <!-- Title -->
+                <h6 class="mb-3  fw-bold fs-4" style="color: #f2f2f7 !important;"  style="color: #fefefe89;">Email us</h6>
+                <p  style="color: #fefefe89;">We're on top of things and aim to respond to all inquiries within 24 hours.</p>
+                <a href="#" class="heading-color text-primary-hover text-decoration-underline mb-0">example@gmail.com</a>
+            </div>
+        </div>
+
+        <!-- Contact info -->
+        <div class="col">
+            <div class="card card-body border p-sm-5" style="background-color: #181818 !important;">
+                <!-- Icon -->
+                <div class="mb-4"><i class="bi bi-telephone fa-xl text-primary"></i></div>
+                <!-- Title -->
+                <h6 class="mb-3  fw-bold fs-4" style="color: #f2f2f7 !important;"  style="color: #fefefe89;">Call us</h6>
+                <p  style="color: #fefefe89;">Let's work together towards a common goal - get in touch!</p>
+                <a href="#" class="heading-color text-primary-hover text-decoration-underline mb-0">(251) 854-6308</a>
+            </div>
+        </div>
+
+    </div> <!-- Row END -->
+</div>
+
+
+<footer class="footer position-relative bg-dark my-5 pt-5 pb-4 pb-lg-5" style="background: #1e1e1e3b !important;">
+    <span
+        class="position-absolute top-0 start-0 d-dark-mode-block d-none w-100 h-100 bg-secondary opacity-75"></span>
+    <div class="position-relative container pt-lg-4" data-bs-theme="dark">
+        <div class="row pb-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="navbar-brand  text-white fw-bold fs-4 p-0 me-0 mb-3 mb-lg-4">
+                    <img style="mix-blend-mode: lighten;" src="downloa.png" width="47" alt="logo">
+                    ModrenWeb
+                </div>
+                <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Dive deeper into the world of Auth and unlock
+                    powerful features that can enhance your application’s security and user experience.
+                </p>
+                <form class="needs-validation" novalidate="">
+                    <label for="subscr-email" class="form-label text-white">Subscribe to our newsletter</label>
+                    <div class="input-group">
+                        <input type="email" id="subscr-email" class="form-control rounded-start ps-5"
+                            placeholder="Your email" required="">
+                        <i
+                            class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
+                        <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email
+                            address.</div>
+                        <button type="submit" class="btn btn-primary">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
+                <div id="footer-links" class="row">
+                    <div class="col-lg-4">
+                        <h6 class="mb-2">
+                            <a href="#useful-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                                data-bs-toggle="collapse">Useful Links</a>
+                        </h6>
+                        <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column pb-lg-1 mb-lg-3">
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block text-white fw-medium px-0 pt-1 pb-2">Home</a>
+                                </li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Services</a>
+                                </li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Our
+                                        Clients</a></li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Testimonials</a>
+                                </li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">News</a>
+                                </li>
+                            </ul>
+                            <ul class="nav flex-column mb-2 mb-lg-0">
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Terms
+                                        &amp; Conditions</a>
+                                </li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Privacy
+                                        Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-3">
+                        <h6 class="mb-2">
+                            <a href="#social-links" class="d-block text-dark dropdown-toggle d-lg-none py-2"
+                                data-bs-toggle="collapse">Socials</a>
+                        </h6>
+                        <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
+                            <ul class="nav flex-column mb-2 mb-lg-0">
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Facebook</a>
+                                </li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">LinkedIn</a>
+                                </li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Twitter</a>
+                                </li>
+                                <li class="nav-item"><a href="#"
+                                        class="nav-link d-inline-block px-0 text-white fw-medium pt-1 pb-2">Instagram</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
+                        <h6 class="mb-2 text-white">Contact Us</h6>
+                        <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="nav d-block fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
+            <span class="text-light opacity-50">© All rights reserved. Made by </span>
+            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank"
+                rel="noopener">Createx Studio</a>
+        </p>
+    </div>
+</footer>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+crossorigin="anonymous"></script>
+</body>
+</html>
